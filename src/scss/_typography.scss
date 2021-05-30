@@ -1,0 +1,94 @@
+body {
+  line-height: 1.6;
+  @include apply-utility("font", "base");
+  @include apply-utility("weight", "regular");
+  color: get-color("text_primary");
+
+  font-size: get-size("500");
+}
+
+// Theming applies to the `#page` element, therefore we
+// set global colour properties here, rather than on `body`.
+// #page,
+// button {
+//   color: get-color("textPrimary");
+// }
+
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  @include apply-utility("weight", "bold");
+  color: var(--text_primary);
+  position: relative;
+  z-index: 1;
+}
+
+h1,
+.h1 {
+  font-size: get-size("1400");
+  @include apply-utility("leading", "flat");
+  & + * {
+    margin-top: get-size("1200");
+  }
+  & + .subtitle {
+    margin-top: get-size("400");
+    margin-bottom: get-size("1200");
+  }
+}
+
+h2,
+.h2 {
+  font-size: get-size("1000");
+  @include apply-utility("weight", "bold");
+  @include apply-utility("leading", "flat");
+  .eyebrow {
+    font-size: 0.33em;
+  }
+  & + * {
+    margin-top: get-size("1200");
+  }
+  & + .subtitle {
+    margin-top: get-size("400");
+    margin-bottom: get-size("1200");
+  }
+}
+
+h3,
+.h3 {
+  font-size: get-size("800");
+  line-height: 1.2;
+  .eyebrow {
+    font-size: 0.5em;
+  }
+  & + * {
+    margin-top: get-size("500");
+  }
+  & + .subtitle {
+    margin-top: 0;
+    margin-bottom: get-size("500");
+  }
+}
+
+h4,
+.h4 {
+  font-size: get-size("700");
+  line-height: 1.2;
+  .eyebrow {
+    font-size: 0.66em;
+  }
+}
+
+// High contrast selection because it can help visually-impaired
+// folks read the text easier
+::selection {
+  color: get-color("light");
+
+  // We set this as an RGBA because that's how you get a solid color, by using 0.99
+  // alpha value. Browsers are wild.
+  background: rgba(get-color("dark"), 0.99);
+}

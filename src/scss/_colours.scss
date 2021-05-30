@@ -1,0 +1,136 @@
+:root {
+  // Colours
+  // --water50: hsl(216, 100%, 88%);
+  // --water100: hsl(216, 100%, 83%);
+  --water50: hsl(216, 100%, 86%);
+  --water100: hsl(216, 100%, 82%);
+  --water200: hsl(220, 100%, 72%);
+  --water300: hsl(226, 100%, 66%);
+  --water400: hsl(235, 100%, 61%);
+  --water500: hsl(241, 100%, 53%);
+  --water600: hsl(241, 100%, 45%);
+  --water700: hsl(241, 100%, 37%);
+  --water800: hsl(241, 100%, 29%);
+  --water900: hsl(241, 100%, 21%);
+  --water1000: hsl(241, 100%, 16%);
+  --water1100: hsl(241, 100%, 13%);
+  --water1200: hsl(241, 100%, 10%);
+  --lemonade100: hsl(36, 100%, 97%);
+  --lemonade200: hsl(51, 100%, 83%);
+  --lemonade300: hsl(52, 100%, 73%);
+  --lemonade400: hsl(51, 100%, 65%);
+  --lemonade500: hsl(50, 100%, 50%);
+  --lemonade600: hsl(49, 100%, 47%);
+  --lemonade700: hsl(43, 85%, 44%);
+  --lemonade800: hsl(43, 85%, 36%);
+  --lemonade900: hsl(43, 85%, 21%);
+  --hotpink400: hsl(334, 100%, 60%);
+  --hotpink500: hsl(334, 100%, 52%);
+
+  // --grape100: hsl(256, 100%, 94%);
+  // --grape200: hsl(256, 100%, 87%);
+  // --grape300: hsl(256, 100%, 81%);
+  // --grape400: hsl(256, 100%, 75%);
+  // --grape500: hsl(256, 100%, 68%);
+  // --grape600: hsl(256, 85%, 58%);
+  // --grape700: hsl(256, 76%, 48%);
+  // --grape800: hsl(256, 83%, 37%);
+  // --grape900: hsl(256, 84%, 29%);
+  // --mint100: hsl(170, 50%, 95%);
+  // --mint200: hsl(168, 68%, 90%);
+  // --mint300: hsl(169, 58%, 83%);
+  // --mint400: hsl(169, 62%, 73%);
+  // --mint500: hsl(176, 71%, 49%);
+  // --mint600: hsl(174, 73%, 44%);
+  // --mint700: hsl(174, 79%, 36%);
+  // --mint800: hsl(178, 94%, 27%);
+  // --mint900: hsl(180, 96%, 19%);
+  // --leaf50: hsl(114, 45%, 96%);
+  // --leaf100: hsl(117, 38%, 89%);
+  // --leaf200: hsl(116, 35%, 75%);
+  // --leaf300: hsl(116, 32%, 61%);
+  // --leaf400: hsl(116, 35%, 49%);
+  // --leaf500: hsl(116, 48%, 41%);
+  // --leaf600: hsl(116, 46%, 38%);
+  // --leaf700: hsl(115, 47%, 33%);
+  // --leaf800: hsl(116, 48%, 29%);
+  // --leaf900: hsl(116, 52%, 24%);
+  // --leaf1000: hsl(116, 52%, 12%);
+  // --berry100: hsl(0, 100%, 98%);
+  // --berry200: hsl(0, 100%, 93%);
+  // --berry300: hsl(0, 100%, 88%);
+  // --berry400: hsl(0, 87%, 76%);
+  // --berry500: hsl(0, 83%, 61%);
+  // --berry600: hsl(0, 57%, 51%);
+  // --berry700: hsl(0, 55%, 45%);
+  // --berry800: hsl(0, 55%, 39%);
+  // --berry900: hsl(355, 53%, 29%);
+  // --berry1000: hsl(355, 53%, 19%);
+  --salt100: hsl(0, 0%, 100%);
+  --salt150: hsl(0, 0%, 97%);
+  --salt200: hsl(240, 4%, 95%);
+  --salt300: hsl(240, 4%, 91%);
+  --salt400: hsl(220, 4%, 84%);
+  --salt500: hsl(225, 3%, 77%);
+  --salt600: hsl(231, 4%, 66%);
+  --salt700: hsl(227, 4%, 55%);
+  --salt800: hsl(229, 5%, 43%);
+  --salt900: hsl(230, 3%, 34%);
+  --salt1000: hsl(230, 5%, 24%);
+  --salt1100: hsl(240, 2%, 18%);
+  --salt1200: hsl(240, 3%, 14%);
+  --salt1300: hsl(0, 0%, 0%);
+
+  /* Default mode */
+  --primary: var(--hotpink500);
+  //typography
+  --text_primary: var(--salt1000);
+  --text_secondary: hsla(230, 3%, 34%, 82%);
+  --text_tertiary: hsla(230, 3%, 34%, 30%);
+  //backgrounds
+  --bg_z0: var(--salt300);
+  --bg_z1: var(--salt150);
+  --bg_z2: var(--salt100);
+  //buttons
+  --bg_button_primary: var(--water300);
+  --text_button_primary: var(--water900);
+  --border_button_primary: var(--water900);
+  --bg_button_secondary: var(--water300);
+  --text_button_secondary: var(--water900);
+  --border_button_secondary: var(--water900);
+  //messages
+  --bg_callout: var(--mint300);
+  --border_callout: var(--mint500);
+  --text_callout_primary: var(--mint800);
+  --text_callout_secondary: var(--mint800);
+  // --bg_positive: var(--leaf300);
+  // --border_positive: var(--leaf500);
+  // --text_positive_primary: var(--leaf800);
+  // --text_positive_secondary: var(--leaf800);
+  // --bg_warning: var(--lemonade300);
+  // --border_warning: var(--lemonade500);
+  // --text_warning_primary: var(--lemonade800);
+  // --text_warning_secondary: var(--lemonade800);
+  // --bg_negative: var(--berry300);
+  // --border_negative: var(--berry500);
+  // --text_negative_primary: var(--berry800);
+  // --text_negative_secondary: var(--berry800);
+  // --bg_neutral: var(--salt300);
+  // --border_neutral: var(--salt500);
+  // --text_neutral_primary: var(--salt800);
+  // --text_neutral_secondary: var(--salt800);
+
+  //inputs
+  --bg_input: hsla(216, 100%, 92%, 0.16);
+  --bg_input_focus: var(--water100);
+  --border_input: var(--border_primary);
+  --border_input_focus: var(--lemonade500);
+  //borders
+  --border_primary: var(--water200);
+  --border_secondary: hsla(226, 100%, 66%, 0.6);
+}
+
+/* Dark mode */
+// .theme-switch:checked ~ #page {
+// theme colours
+// }

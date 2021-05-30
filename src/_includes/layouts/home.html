@@ -1,17 +1,17 @@
 {% extends "layouts/base.html" %} {% block content %}
 <article>
-  <h1>{{ title }}</h1>
-  {{ content | safe }}
-  <div>
-    <ol class="[ post-list ] [ flow ]">
-      {% for item in collections.projects %}
-      <li class="[ post-list__item ] [ leading-tight measure-long ]">
-        <a href="{{ item.url }}" class="post-list__link"
-          >{{ item.data.title }}</a
-        >
-      </li>
-      {% endfor %}
-    </ol>
+  <div class="wrapper">
+    <h1 class="h2">{{ title }}</h1>
+    {{ content | safe }}
+    <div>
+      <ol>
+        {% for item in collections.projects %}
+        <li>
+          <a href="{{ item.url }}">{{ item.data.title }}</a>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
   </div>
 </article>
 {% endblock %}

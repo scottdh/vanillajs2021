@@ -1,0 +1,76 @@
+@import "reset";
+@import "fluid-type-scale";
+
+@import "config";
+@import "../../node_modules/gorko/gorko.scss";
+
+// Global styles start
+:root {
+  --flow-space: #{get-size("500")};
+}
+
+body {
+  background: get-color("bg_z1");
+}
+
+a:link {
+  // color: var(--lemonade600);
+  color: currentColor;
+  //   text-decoration: none;
+  //   @include apply-utility("font", "sans-serif");
+}
+a:not([class]) {
+  color: currentColor;
+  // text-decoration-color: var(--border_primary);
+}
+
+a:visited {
+  color: currentColor;
+}
+
+a:focus {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+a:active {
+  color: coral;
+}
+
+:focus {
+  outline: 2px dashed var(--primary);
+  outline-offset: 0.25rem;
+}
+
+main:focus {
+  outline: none;
+}
+
+// Scrollbar styles
+::-webkit-scrollbar {
+  height: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: 1px solid get-color("dark");
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: get-color("dark");
+  border-radius: 0.25rem;
+}
+
+@import "colours";
+@import "typography";
+
+// Import blocks
+
+// Import utilities
+@import "utilities/flow";
+@import "utilities/visually-hidden";
+@import "utilities/wrapper";
