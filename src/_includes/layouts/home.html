@@ -1,7 +1,8 @@
 {% extends "layouts/base.html" %} {% block content %}
-<article>
-  <div class="wrapper">
-    <h1 class="h2">{{ title }}</h1>
+<article class="panel">
+  <div class="wrapper flow">
+    <h1>{{ title }}</h1>
+    <p class="subtitle color-textSecondary">By Scott Herrington</p>
     {{ content | safe }}
     <div>
       <ol>

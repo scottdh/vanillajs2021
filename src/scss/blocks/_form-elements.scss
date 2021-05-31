@@ -1,0 +1,47 @@
+form {
+  [type="date"],
+  [type="email"],
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  textarea {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    line-height: 1.3;
+    font-family: inherit;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0.25em;
+    border: 2px solid get-color("borderPrimary");
+    background-color: get-color("input_bg");
+  }
+
+  .field {
+    max-width: 26em;
+    label {
+      line-height: 1.3;
+      display: block;
+      margin-bottom: 0.2em;
+      .field-label {
+        @include apply-utility("weight", "semiBold");
+        display: block;
+      }
+      .field-hint {
+        color: get-color("textSecondary");
+      }
+    }
+  }
+  .field-checkbox {
+    label {
+      display: block;
+      .field-label {
+      }
+    }
+  }
+}

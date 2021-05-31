@@ -1,71 +1,63 @@
+// .theme-switch {
+//   position: absolute !important;
+//   height: 1px;
+//   width: 1px;
+//   overflow: hidden;
+//   clip: rect(1px, 1px, 1px, 1px);
+// }
+
 :root {
   // Colours
-  // --water50: hsl(216, 100%, 88%);
-  // --water100: hsl(216, 100%, 83%);
-  --water50: hsl(216, 100%, 86%);
-  --water100: hsl(216, 100%, 82%);
-  --water200: hsl(220, 100%, 72%);
-  --water300: hsl(226, 100%, 66%);
-  --water400: hsl(235, 100%, 61%);
-  --water500: hsl(241, 100%, 53%);
-  --water600: hsl(241, 100%, 45%);
-  --water700: hsl(241, 100%, 37%);
-  --water800: hsl(241, 100%, 29%);
-  --water900: hsl(241, 100%, 21%);
-  --water1000: hsl(241, 100%, 16%);
-  --water1100: hsl(241, 100%, 13%);
-  --water1200: hsl(241, 100%, 10%);
+  --water100: hsl(200, 100%, 96%);
+  --water200: hsl(200, 81%, 90%);
+  --water300: hsl(200, 75%, 83%);
+  --water400: hsl(206, 68%, 68%);
+  --water500: hsl(209, 68%, 59%);
+  --water600: hsl(206, 80%, 43%);
+  --water700: hsl(209, 68%, 37%);
+  --water800: hsl(209, 70%, 29%);
+  --water900: hsl(210, 72%, 23%);
+  --grape400: hsl(334, 100%, 60%);
+  --grape500: hsl(334, 100%, 52%);
+  --mint100: hsl(170, 50%, 95%);
+  --mint200: hsl(168, 68%, 90%);
+  --mint300: hsl(169, 58%, 83%);
+  --mint400: hsl(169, 62%, 73%);
+  --mint500: hsl(176, 71%, 49%);
+  --mint600: hsl(174, 73%, 44%);
+  --mint700: hsl(174, 79%, 36%);
+  --mint800: hsl(178, 94%, 27%);
+  --mint900: hsl(180, 96%, 19%);
+  --leaf50: hsl(114, 45%, 96%);
+  --leaf100: hsl(117, 38%, 89%);
+  --leaf200: hsl(116, 35%, 75%);
+  --leaf300: hsl(116, 32%, 61%);
+  --leaf400: hsl(116, 35%, 49%);
+  --leaf500: hsl(116, 48%, 41%);
+  --leaf600: hsl(116, 46%, 38%);
+  --leaf700: hsl(115, 47%, 33%);
+  --leaf800: hsl(116, 48%, 29%);
+  --leaf900: hsl(116, 52%, 24%);
+  --leaf1000: hsl(116, 52%, 12%);
   --lemonade100: hsl(36, 100%, 97%);
-  --lemonade200: hsl(51, 100%, 83%);
-  --lemonade300: hsl(52, 100%, 73%);
-  --lemonade400: hsl(51, 100%, 65%);
-  --lemonade500: hsl(50, 100%, 50%);
-  --lemonade600: hsl(49, 100%, 47%);
+  --lemonade200: hsl(37, 100%, 92%);
+  --lemonade300: hsl(37, 100%, 92%);
+  --lemonade400: hsl(40, 100%, 76%);
+  --lemonade500: hsl(42, 100%, 64%);
+  --lemonade600: hsl(43, 91%, 52%);
   --lemonade700: hsl(43, 85%, 44%);
   --lemonade800: hsl(43, 85%, 36%);
   --lemonade900: hsl(43, 85%, 21%);
-  --hotpink400: hsl(334, 100%, 60%);
-  --hotpink500: hsl(334, 100%, 52%);
-
-  // --grape100: hsl(256, 100%, 94%);
-  // --grape200: hsl(256, 100%, 87%);
-  // --grape300: hsl(256, 100%, 81%);
-  // --grape400: hsl(256, 100%, 75%);
-  // --grape500: hsl(256, 100%, 68%);
-  // --grape600: hsl(256, 85%, 58%);
-  // --grape700: hsl(256, 76%, 48%);
-  // --grape800: hsl(256, 83%, 37%);
-  // --grape900: hsl(256, 84%, 29%);
-  // --mint100: hsl(170, 50%, 95%);
-  // --mint200: hsl(168, 68%, 90%);
-  // --mint300: hsl(169, 58%, 83%);
-  // --mint400: hsl(169, 62%, 73%);
-  // --mint500: hsl(176, 71%, 49%);
-  // --mint600: hsl(174, 73%, 44%);
-  // --mint700: hsl(174, 79%, 36%);
-  // --mint800: hsl(178, 94%, 27%);
-  // --mint900: hsl(180, 96%, 19%);
-  // --leaf50: hsl(114, 45%, 96%);
-  // --leaf100: hsl(117, 38%, 89%);
-  // --leaf200: hsl(116, 35%, 75%);
-  // --leaf300: hsl(116, 32%, 61%);
-  // --leaf400: hsl(116, 35%, 49%);
-  // --leaf500: hsl(116, 48%, 41%);
-  // --leaf600: hsl(116, 46%, 38%);
-  // --leaf700: hsl(115, 47%, 33%);
-  // --leaf800: hsl(116, 48%, 29%);
-  // --leaf900: hsl(116, 52%, 24%);
-  // --leaf1000: hsl(116, 52%, 12%);
-  // --berry100: hsl(0, 100%, 98%);
-  // --berry200: hsl(0, 100%, 93%);
-  // --berry300: hsl(0, 100%, 88%);
-  // --berry400: hsl(0, 87%, 76%);
-  // --berry500: hsl(0, 83%, 61%);
-  // --berry600: hsl(0, 57%, 51%);
-  // --berry700: hsl(0, 55%, 45%);
-  // --berry800: hsl(0, 55%, 39%);
-  // --berry900: hsl(355, 53%, 29%);
-  // --berry1000: hsl(355, 53%, 19%);
+  --berry100: hsl(0, 100%, 98%);
+  --berry200: hsl(0, 100%, 93%);
+  --berry300: hsl(0, 100%, 88%);
+  --berry400: hsl(0, 87%, 76%);
+  --berry500: hsl(0, 83%, 61%);
+  --berry600: hsl(0, 57%, 51%);
+  --berry700: hsl(0, 55%, 45%);
+  --berry800: hsl(0, 55%, 39%);
+  --berry900: hsl(355, 53%, 29%);
+  --berry1000: hsl(355, 53%, 19%);
   --salt100: hsl(0, 0%, 100%);
   --salt150: hsl(0, 0%, 97%);
   --salt200: hsl(240, 4%, 95%);
@@ -82,55 +74,133 @@
   --salt1300: hsl(0, 0%, 0%);
 
   /* Default mode */
-  --primary: var(--hotpink500);
+  --primaryDarker: var(--grape700);
+  --primary: var(--grape500);
+  --primaryLighter: var(--grape300);
+
+  // greys
+  --grey7: var(--salt700);
+  --grey6: var(--salt600);
+  --grey5: var(--salt500);
+  --grey4: var(--salt400);
+  --grey3: var(--salt300);
+  --grey2: var(--salt200);
+  --grey: var(--salt100);
+
   //typography
-  --text_primary: var(--salt1000);
-  --text_secondary: hsla(230, 3%, 34%, 82%);
-  --text_tertiary: hsla(230, 3%, 34%, 30%);
+  --textPrimary: var(--salt1000);
+  --textSecondary: hsla(230, 3%, 34%, 60%);
+  --textTertiary: hsla(230, 3%, 34%, 30%);
+
   //backgrounds
-  --bg_z0: var(--salt300);
-  --bg_z1: var(--salt150);
-  --bg_z2: var(--salt100);
-  //buttons
-  --bg_button_primary: var(--water300);
-  --text_button_primary: var(--water900);
-  --border_button_primary: var(--water900);
-  --bg_button_secondary: var(--water300);
-  --text_button_secondary: var(--water900);
-  --border_button_secondary: var(--water900);
+  --bgZ0: var(--salt300);
+  --bgZ1: var(--salt100);
+  --bgZ2: var(--salt100);
+
   //messages
-  --bg_callout: var(--mint300);
-  --border_callout: var(--mint500);
-  --text_callout_primary: var(--mint800);
-  --text_callout_secondary: var(--mint800);
-  // --bg_positive: var(--leaf300);
-  // --border_positive: var(--leaf500);
-  // --text_positive_primary: var(--leaf800);
-  // --text_positive_secondary: var(--leaf800);
-  // --bg_warning: var(--lemonade300);
-  // --border_warning: var(--lemonade500);
-  // --text_warning_primary: var(--lemonade800);
-  // --text_warning_secondary: var(--lemonade800);
-  // --bg_negative: var(--berry300);
-  // --border_negative: var(--berry500);
-  // --text_negative_primary: var(--berry800);
-  // --text_negative_secondary: var(--berry800);
-  // --bg_neutral: var(--salt300);
-  // --border_neutral: var(--salt500);
-  // --text_neutral_primary: var(--salt800);
-  // --text_neutral_secondary: var(--salt800);
+  --negative_bg: var(--berry300);
+  --negative_border: var(--berry500);
+  --negative_primaryText: var(--berry800);
+  --attention_bg: var(--lemonade300);
+  --attention_border: var(--lemonade500);
+  --attention_primaryText: var(--lemonade900);
+  --positive_bg: var(--leaf200);
+  --positive_border: var(--leaf500);
+  --positive_primaryText: var(--leaf900);
+  --information_bg: var(--mint200);
+  --information_border: var(--mint500);
+  --information_primaryText: var(--mint900);
+  --neutral_bg: var(--salt200);
+  --neutral_border: var(--salt500);
+  --neutral_primaryText: var(--salt900);
 
   //inputs
-  --bg_input: hsla(216, 100%, 92%, 0.16);
-  --bg_input_focus: var(--water100);
-  --border_input: var(--border_primary);
-  --border_input_focus: var(--lemonade500);
+  --focus: var(--water100);
+  --focus_border: var(--water500);
+  --focus_negative: var(--berry100);
+  --input_bg: rgba(255, 255, 255, 0.6);
+
+  //buttons
+  --primaryButton_bg: var(--grape500);
+  --primaryButton_text: var(--salt100);
+  --primaryButton_border: var(--grape500);
+  --secondaryButton_bg: transparent;
+  --secondaryButton_text: var(--grape500);
+  --secondaryButton_border: var(--grape500);
+  --destructiveButton_bg: var(--berry800);
+  --destructiveButton_text: var(--berry100);
+  --destructiveButton_border: var(--berry500);
+
   //borders
-  --border_primary: var(--water200);
-  --border_secondary: hsla(226, 100%, 66%, 0.6);
+  --borderPrimary: var(--salt500);
+  --borderSecondary: hsla(230, 5%, 24%, 30%);
 }
 
 /* Dark mode */
 // .theme-switch:checked ~ #page {
-// theme colours
+//   --primaryDarker: var(--water700);
+//   --primary: var(--water500);
+//   --primaryLighter: var(--water300);
+//   --secondaryDarkest: var(--grape900);
+//   --secondaryDarker: var(--grape700);
+//   --secondary: var(--grape500);
+//   --secondaryLighter: var(--grape300);
+//   --secondaryLightest: var(--grape100);
+//   --tertiaryDarker: var(--mint700);
+//   --tertiary: var(--mint500);
+//   --tertiaryLighter: var(--mint300);
+
+//   // greys
+//   --grey7: var(--salt600);
+//   --grey6: var(--salt700);
+//   --grey5: var(--salt800);
+//   --grey4: var(--salt900);
+//   --grey3: var(--salt1000);
+//   --grey2: var(--salt1100);
+//   --grey: var(--salt1200);
+//   //typography
+//   --textPrimary: var(--salt150);
+//   --textSecondary: hsla(240, 4%, 95%, 60%);
+//   --textTertiary: hsla(240, 4%, 95%, 30%);
+//   //backgrounds
+//   --bgZ0: var(--salt1200);
+//   --bgZ1: var(--salt1100);
+//   --bgZ2: var(--salt1000);
+//   //messages
+//   --negative_bg: var(--berry1000);
+//   --negative_border: var(--berry500);
+//   --negative_primaryText: var(--berry300);
+//   --attention_bg: var(--lemonade900);
+//   --attention_border: var(--lemonade500);
+//   --attention_primaryText: var(--lemonade400);
+//   --positive_bg: var(--leaf1000);
+//   --positive_border: var(--leaf500);
+//   --positive_primaryText: var(--leaf200);
+//   --information_bg: var(--mint900);
+//   --information_border: var(--mint500);
+//   --information_primaryText: var(--mint200);
+//   --neutral_bg: var(--salt900);
+//   --neutral_border: var(--salt500);
+//   --neutral_primaryText: var(--salt200);
+//   //inputs
+//   --focus: hsla(210, 72%, 23%, 50%);
+//   --focus_border: var(--water500);
+//   --focus_negative: hsla(355, 53%, 29%, 30%);
+//   --input_bg: hsla(240, 3%, 49%, 15%);
+//   //buttons
+//   --commitButton_bg: var(--mint600);
+//   --commitButton_text: var(--mint100);
+//   --commitButton_border: var(--mint300);
+//   --primaryButton_bg: var(--water600);
+//   --primaryButton_text: var(--water100);
+//   --primaryButton_border: var(--water300);
+//   --secondaryButton_bg: var(--salt900);
+//   --secondaryButton_text: var(--salt200);
+//   --secondaryButton_border: var(--salt900);
+//   --destructiveButton_bg: var(--berry800);
+//   --destructiveButton_text: var(--berry100);
+//   --destructiveButton_border: var(--berry500);
+//   //borders
+//   --borderPrimary: var(--salt900);
+//   --borderSecondary: hsla(230, 3%, 34%, 65%);
 // }

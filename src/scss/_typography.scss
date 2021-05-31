@@ -1,9 +1,8 @@
 body {
   line-height: 1.6;
-  @include apply-utility("font", "base");
+  @include apply-utility("font", "serif");
   @include apply-utility("weight", "regular");
-  color: get-color("text_primary");
-
+  color: get-color("textPrimary");
   font-size: get-size("500");
 }
 
@@ -22,39 +21,35 @@ h4,
 .h2,
 .h3,
 .h4 {
+  @include apply-utility("font", "sans-serif");
   @include apply-utility("weight", "bold");
-  color: var(--text_primary);
-  position: relative;
-  z-index: 1;
 }
 
 h1,
 .h1 {
-  font-size: get-size("1400");
+  font-size: get-size("1000");
   @include apply-utility("leading", "flat");
+  --flow-space: #{get-size("1000")};
+  margin-bottom: get-size("1000");
   & + * {
-    margin-top: get-size("1200");
+    --flow-space: #{get-size("600")};
   }
   & + .subtitle {
-    margin-top: get-size("400");
-    margin-bottom: get-size("1200");
+    margin-top: -2em;
+    margin-bottom: get-size("1000");
   }
 }
 
 h2,
 .h2 {
-  font-size: get-size("1000");
-  @include apply-utility("weight", "bold");
+  font-size: get-size("800");
   @include apply-utility("leading", "flat");
-  .eyebrow {
-    font-size: 0.33em;
-  }
   & + * {
-    margin-top: get-size("1200");
+    --flow-space: #{get-size("800")};
   }
   & + .subtitle {
     margin-top: get-size("400");
-    margin-bottom: get-size("1200");
+    margin-bottom: get-size("800");
   }
 }
 
@@ -81,14 +76,4 @@ h4,
   .eyebrow {
     font-size: 0.66em;
   }
-}
-
-// High contrast selection because it can help visually-impaired
-// folks read the text easier
-::selection {
-  color: get-color("light");
-
-  // We set this as an RGBA because that's how you get a solid color, by using 0.99
-  // alpha value. Browsers are wild.
-  background: rgba(get-color("dark"), 0.99);
 }

@@ -2,6 +2,7 @@ module.exports = (config) => {
   // Set directories to pass through to the dist folder
   config.addPassthroughCopy("./src/images/");
   config.addPassthroughCopy("./src/js/");
+  config.addPassthroughCopy({ "./src/_includes/css/**/*.css": "css" });
 
   // Returns a collection of projects
   config.addCollection("projects", (collection) => {

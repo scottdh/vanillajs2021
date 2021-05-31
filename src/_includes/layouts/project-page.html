@@ -1,7 +1,10 @@
 {% extends "layouts/base.html" %} {% block content %}
-<article>
-  <h1>{{ title }}</h1>
-  {{ content | safe }}
+
+<article class="panel">
+  <div class="wrapper flow">
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+  </div>
 </article>
 
 {% if script %}
