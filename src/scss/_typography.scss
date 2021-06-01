@@ -77,3 +77,11 @@ h4,
     font-size: 0.66em;
   }
 }
+
+pre code {
+  font-size: get-size("400");
+  color: var(--salt100);
+  background-color: var(--salt1100);
+  display: block;
+  padding: get-size("400");
+}

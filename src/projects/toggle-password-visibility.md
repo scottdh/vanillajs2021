@@ -14,7 +14,7 @@ script: "toggle-password-visibility.js"
   <div class="field">
     <label for="password">
       <span class="field-label">Password</span>
-      <span class="field-hint">Must contain 8+ characters with at least 1 number</span>
+      <span class="field-hint"></span>
     </label>
     <input type="password" name="password" id="password-field">
   </div>
@@ -30,10 +30,10 @@ script: "toggle-password-visibility.js"
 </form>
 <pre>
   <code>
-    
+
     const showPassword = document.querySelector("#show-password");
     const passwordField = document.querySelector("#password-field");
-    
+
     const changeHandler = function (e) {
       if (e.target == showPassword) {
         if (showPassword.checked) {
@@ -42,10 +42,10 @@ script: "toggle-password-visibility.js"
           passwordField.type = "password";
         }
       }
-    
+
       return;
     };
-    
+
     document.addEventListener("change", changeHandler);
 
   </code>
