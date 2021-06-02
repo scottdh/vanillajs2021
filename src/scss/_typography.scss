@@ -1,5 +1,5 @@
 body {
-  line-height: 1.6;
+  @include apply-utility("leading", "loose");
   @include apply-utility("font", "serif");
   @include apply-utility("weight", "regular");
   color: get-color("textPrimary");
@@ -23,59 +23,53 @@ h4,
 .h4 {
   @include apply-utility("font", "sans-serif");
   @include apply-utility("weight", "bold");
+  @include apply-utility("leading", "flat");
 }
 
 h1,
 .h1 {
   font-size: get-size("1000");
-  @include apply-utility("leading", "flat");
   --flow-space: #{get-size("1000")};
-  margin-bottom: get-size("1000");
+  margin-bottom: get-size("800");
+  &.major {
+    font-size: get-size("1000");
+  }
   & + * {
     --flow-space: #{get-size("600")};
   }
   & + .subtitle {
-    margin-top: -2em;
-    margin-bottom: get-size("1000");
+    margin-top: calc(-1 * #{get-size("400")});
+    margin-bottom: get-size("800");
   }
 }
 
 h2,
 .h2 {
   font-size: get-size("800");
-  @include apply-utility("leading", "flat");
+  --flow-space: #{get-size("900")};
   & + * {
-    --flow-space: #{get-size("800")};
+    --flow-space: #{get-size("600")};
   }
   & + .subtitle {
-    margin-top: get-size("400");
-    margin-bottom: get-size("800");
+    margin-top: calc(-1 * #{get-size("600")});
+    margin-bottom: get-size("600");
   }
 }
 
 h3,
 .h3 {
-  font-size: get-size("800");
+  font-size: get-size("700");
   line-height: 1.2;
-  .eyebrow {
-    font-size: 0.5em;
-  }
+  --flow-space: #{get-size("800")};
   & + * {
-    margin-top: get-size("500");
-  }
-  & + .subtitle {
-    margin-top: 0;
-    margin-bottom: get-size("500");
+    --flow-space: #{get-size("600")};
   }
 }
 
 h4,
 .h4 {
-  font-size: get-size("700");
-  line-height: 1.2;
-  .eyebrow {
-    font-size: 0.66em;
-  }
+  font-size: get-size("600");
+  @include apply-utility("leading", "tight");
 }
 
 pre code {
