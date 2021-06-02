@@ -28,9 +28,9 @@ h4,
 
 h1,
 .h1 {
-  font-size: get-size("1000");
-  --flow-space: #{get-size("1000")};
-  margin-bottom: get-size("800");
+  font-size: get-size("900");
+  --flow-space: #{get-size("900")};
+  margin-bottom: get-size("700");
   &.major {
     font-size: get-size("1000");
   }
@@ -38,8 +38,8 @@ h1,
     --flow-space: #{get-size("600")};
   }
   & + .subtitle {
-    margin-top: calc(-1 * #{get-size("400")});
-    margin-bottom: get-size("800");
+    margin-top: calc(-1 * #{get-size("700")});
+    margin-bottom: get-size("700");
   }
 }
 
@@ -62,7 +62,7 @@ h3,
   line-height: 1.2;
   --flow-space: #{get-size("800")};
   & + * {
-    --flow-space: #{get-size("600")};
+    // --flow-space: #{get-size("600")};
   }
 }
 

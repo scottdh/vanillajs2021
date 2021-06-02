@@ -1,5 +1,5 @@
 ---
-title: "Vanilla JS 2021 projects menu"
+title: "Vanilla JS 2021"
 intro: "Introduction goes here"
 layout: "layouts/home.html"
 ---
