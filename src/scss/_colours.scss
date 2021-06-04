@@ -17,8 +17,14 @@
   --water700: hsl(209, 68%, 37%);
   --water800: hsl(209, 70%, 29%);
   --water900: hsl(210, 72%, 23%);
+  --grape100: hsl(334, 100%, 96%);
+  --grape200: hsl(334, 100%, 90%);
+  --grape300: hsl(334, 100%, 68%);
   --grape400: hsl(334, 100%, 60%);
   --grape500: hsl(334, 100%, 52%);
+  --grape600: hsl(334, 100%, 44%);
+  --grape700: hsl(334, 100%, 36%);
+  --grape800: hsl(334, 100%, 24%);
   --mint100: hsl(170, 50%, 95%);
   --mint200: hsl(168, 68%, 90%);
   --mint300: hsl(169, 58%, 83%);
@@ -89,7 +95,7 @@
 
   //typography
   --textPrimary: var(--salt1000);
-  --textSecondary: hsla(230, 3%, 34%, 60%);
+  --textSecondary: hsla(230, 3%, 7%, 60%);
   --textTertiary: hsla(230, 3%, 34%, 30%);
 
   //backgrounds

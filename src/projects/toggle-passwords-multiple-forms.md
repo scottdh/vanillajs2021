@@ -6,7 +6,7 @@ script: "toggle-passwords-multiple-forms.js"
 
 <form class="flow form--block">
 <h2>Change Username</h2>
-<p>Enter your username and password to change your username.</p>
+<p class="subtitle">Enter your username and password to change your username.</p>
 	<div class="field">
 		<label for="username" class="field-label">Username</label>
 		<input type="text" name="username" id="username">
@@ -22,12 +22,12 @@ script: "toggle-passwords-multiple-forms.js"
 		</label>
 	</div>
 	<p>
-		<button type="submit">Change Username</button>
+		<button type="submit" data-type="primary">Change Username</button>
 	</p>
 </form>
 <form class="flow form--block">
 <h2>Change Password</h2>
-<p>Enter your current password and new password below.</p>
+<p class="subtitle">Enter your current password and new password below.</p>
 	<div class="field">
 		<label for="current-password" class="field-label">Current Password</label>
 		<input type="password" name="current-password" id="current-password">
@@ -43,7 +43,7 @@ script: "toggle-passwords-multiple-forms.js"
 		</label>
 	</div>
 	<p>
-		<button type="submit">Change Passwords</button>
+		<button type="submit" data-type="primary">Change Passwords</button>
 	</p>
 </form>
 <pre>

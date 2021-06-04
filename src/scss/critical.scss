@@ -14,18 +14,14 @@ body {
 }
 
 a:link {
-  // color: var(--lemonade600);
   color: currentColor;
-  //   text-decoration: none;
-  //   @include apply-utility("font", "sans-serif");
 }
 a:not([class]) {
   color: currentColor;
-  // text-decoration-color: var(--border_primary);
 }
 
 a:visited {
-  color: currentColor;
+  color: get-color("grey7");
 }
 
 a:focus {
@@ -75,6 +71,7 @@ main:focus {
 
 // Import blocks
 @import "blocks/form-elements";
+@import "blocks/buttons";
 
 // Import utilities
 @import "utilities/flow";
