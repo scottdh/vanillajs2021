@@ -14,7 +14,7 @@ script: "toggle-password-visibility.js"
   <div class="field">
     <label for="password">
       <span class="field-label">Password</span>
-      <span class="field-hint"></span>
+      <span class="field-hint">This is a hint</span>
     </label>
     <input type="password" name="password" id="password-field">
   </div>
