@@ -9,15 +9,13 @@ const targetIsShowPasswordToggle = function (el) {
   return result;
 };
 
-const togglePasswordFieldsInForm = function (showPasswordToggle) {
-  // Grab the form the toggle's in
-  let form = showPasswordToggle.closest("form");
+const togglePasswordFieldsInForm = function (togglesForm) {
   // Create an array of password fields that share same form as the toggle from the  passwordFields NodeList
   let formPasswordFields = [...passwordFields].filter(
-    (el) => el.closest("form") === form
+    (field) => field.closest("form") === togglesForm
   );
   if (formPasswordFields) {
-    formPasswordFields.forEach(function (field) {
+    formPasswordFields.forEach((field) => {
       field.type === "password"
         ? (field.type = "text")
         : (field.type = "password");
@@ -28,7 +26,7 @@ const togglePasswordFieldsInForm = function (showPasswordToggle) {
 
 const changeHandler = function (e) {
   if (targetIsShowPasswordToggle(e.target)) {
-    togglePasswordFieldsInForm(e.target);
+    togglePasswordFieldsInForm(e.target.closest("form"));
   }
   return;
 };
