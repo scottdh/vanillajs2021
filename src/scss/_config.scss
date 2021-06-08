@@ -12,17 +12,17 @@
 /// your whole project.
 ///
 $gorko-size-scale: (
-  "300": var(--s-2),
-  "400": var(--s-1),
-  "500": var(--s0),
-  "600": var(--s1),
-  "700": var(--s2),
-  "800": var(--s3),
-  "900": var(--s4),
-  "1000": var(--s5),
-  "1200": var(--s6),
-  "1400": var(--s7),
-  "1600": var(--s8),
+  "300": var(--step--2),
+  "400": var(--step--1),
+  "500": var(--step-0),
+  "600": var(--step-1),
+  "700": var(--step-2),
+  "800": var(--step-3),
+  "900": var(--step-4),
+  "1000": var(--step-5),
+  "1200": var(--step-6),
+  "1400": var(--step-7),
+  "1600": var(--step-8),
 );
 
 /// COLORS
