@@ -15,6 +15,7 @@ body {
 
 a:link {
   color: currentColor;
+  cursor: pointer;
 }
 a:not([class]) {
   color: currentColor;
@@ -72,6 +73,7 @@ main:focus {
 // Import blocks
 @import "blocks/form-elements";
 @import "blocks/buttons";
+@import "blocks/link-list";
 
 // Import utilities
 @import "utilities/flow";

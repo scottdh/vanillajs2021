@@ -1,0 +1,7 @@
+li.link-list a {
+  display: block;
+  padding: 0.5em;
+  &:hover {
+    background-color: get-color("focus");
+  }
+}
