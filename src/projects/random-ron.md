@@ -5,10 +5,9 @@ script: "random-ron.js"
 ---
 
 <figure class="flow" data-type="blockquote">
-  <blockquote>...</blockquote>
+  <blockquote aria-live="polite">...</blockquote>
   <figcaption>
     - Ron Swanson
   </figcaption>
 </figure>
-
 <button id="get-quote">More Ron</button>
