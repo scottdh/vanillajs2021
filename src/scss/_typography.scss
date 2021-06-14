@@ -76,6 +76,38 @@ h4,
   @include apply-utility("leading", "tight");
 }
 
+figure {
+  figcaption,
+  .figcaption {
+    @include apply-utility("font", "sans-serif");
+    font-size: get-size("400");
+    color: get-color("textSecondary");
+    --flow-space: #{get-size("300")};
+    cite,
+    .cite {
+      text-transform: none;
+      font-style: italic;
+    }
+  }
+  &[data-type="blockquote"] {
+    border-left: 4px solid get-color("textPrimary");
+    padding-left: 1em;
+  }
+}
+
+blockquote {
+  // @include apply-utility("font", "sans-serif");
+  @include apply-utility("weight", "semiBold");
+  &::before {
+    content: "\201C";
+    font-size: 3em;
+    display: block;
+    text-align: left;
+    width: 100%;
+    line-height: 0.5em;
+  }
+}
+
 pre code {
   font-size: get-size("400");
   color: var(--salt100);
