@@ -24,7 +24,7 @@ const getNewQuote = function () {
       }
       // After 50, empty the shownQuotes array
       if (shownQuotes.length === 50) {
-        shownQuotes = [];
+        shownQuotes.shift();
       }
     })
     .catch(function (error) {
