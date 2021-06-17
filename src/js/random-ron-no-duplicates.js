@@ -22,7 +22,7 @@ const getNewQuote = function () {
         shownQuotes.push(quote);
         blockQuote.textContent = quote;
       }
-      // After 50, empty the shownQuotes array
+      // Prevent seeing a quote that was shown within the last 50 quotes
       if (shownQuotes.length === 50) {
         shownQuotes.shift();
       }
