@@ -96,7 +96,6 @@ figure {
 }
 
 blockquote {
-  // @include apply-utility("font", "sans-serif");
   @include apply-utility("weight", "semiBold");
   &::before {
     content: "\201C";
