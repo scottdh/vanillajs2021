@@ -10,11 +10,14 @@ const getNewQuote = async function () {
 
     // If the call failed, throw an error
     if (!response.ok) {
-      throw "No response from " + quoteGeneratorAPI + "received";
+      throw console.error(quoteGeneratorAPI + " response not ok.");
     }
 
     // Otherwise, get the post JSON
     let data = await response.json();
+    if (!data) {
+      throw "No data";
+    }
 
     let quote = data[0];
     if (shownQuotes.includes(quote)) {
@@ -28,7 +31,7 @@ const getNewQuote = async function () {
       shownQuotes.shift();
     }
   } catch (error) {
-    console.warn(error);
+    console.error(error);
     blockQuote.textContent = "Unable to load quote";
   }
 };

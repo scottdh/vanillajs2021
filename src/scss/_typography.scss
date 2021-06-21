@@ -55,7 +55,7 @@ h2,
     --flow-space: #{get-size("600")};
   }
   & + .subtitle {
-    margin-top: calc(-1 * #{get-size("500")});
+    margin-top: calc(-1 * #{get-size("600")});
     margin-bottom: get-size("600");
   }
 }
@@ -63,10 +63,14 @@ h2,
 h3,
 .h3 {
   font-size: get-size("700");
-  line-height: 1.2;
   --flow-space: #{get-size("800")};
+  margin-bottom: get-size("600");
   & + * {
     --flow-space: #{get-size("600")};
+  }
+  & + .subtitle {
+    margin-top: calc(-1 * #{get-size("500")});
+    margin-bottom: get-size("600");
   }
 }
 
