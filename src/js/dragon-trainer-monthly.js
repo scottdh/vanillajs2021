@@ -8,7 +8,7 @@ const renderPage = function (articles) {
   ${articles
     .map(function (article, index) {
       const byline = `
-      <footer class="byline">
+      <footer class="byline text-400">
         By <a rel="author" href="#">${article.author}</a> on ${article.pubdate}
       </footer>`;
       let html = `
