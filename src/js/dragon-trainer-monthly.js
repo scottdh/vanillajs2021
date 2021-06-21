@@ -42,8 +42,9 @@ const getArticles = async function () {
     }
 
     let data = await response.json();
-    console.log(data);
-
+    if (!data) {
+      throw "No data";
+    }
     app.innerHTML = renderPage(data.articles);
   } catch (error) {
     console.error(error);
