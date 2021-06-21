@@ -2,33 +2,33 @@ const app = document.querySelector("#app");
 const dragonTrainerAPI = "https://vanillajsacademy.com/api/dragons.json";
 
 const renderPage = function (articles) {
-  let html = `
+  let html = ``;
+  html += `
   <ul class="flow flow-space-1200">
   ${articles
     .map(function (article, index) {
+      const byline = `
+      <footer class="byline">
+        By <a rel="author" href="#">${article.author}</a> on ${article.pubdate}
+      </footer>`;
       let html = `
       <li>
         <article class="flow flow-space-400">
           <header>`;
       index === 0
-        ? (html += `<h2>${article.title}</h2>`)
-        : (html += `<h3>${article.title}</h3>`);
+        ? (html += `<h2>${article.title}</h2>${byline}</header>`)
+        : (html += `<h3>${article.title}</h3>${byline}</header>`);
 
       html += `
-      <div class="byline subtitle">
-            <address class="author" style="display: inline-block;">By <a rel="author" href="#">${article.author}</a></address> 
-            on ${article.pubdate}
-        </div>
-    </header>
-    <div class="article-content">
-    <p>${article.article}</p>
-    </div>
-        </article></li>`;
+          <div class="article-content">
+            <p>${article.article}</p>
+          </div>
+        </article>
+      </li>`;
       return html;
     })
-    .join(" ")}
-  </ul>
-  `;
+    .join("")}
+  </ul>`;
   console.log(html);
   return html;
 };

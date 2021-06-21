@@ -27,6 +27,9 @@ h4,
   & + .subtitle {
     color: get-color("textSecondary");
   }
+  & + .byline {
+    color: get-color("textSecondary");
+  }
 }
 
 h1,
@@ -55,6 +58,10 @@ h2,
     --flow-space: #{get-size("600")};
   }
   & + .subtitle {
+    margin-top: calc(-1 * #{get-size("500")});
+    margin-bottom: get-size("600");
+  }
+  & + .byline {
     margin-top: calc(-1 * #{get-size("600")});
     margin-bottom: get-size("600");
   }
@@ -69,6 +76,10 @@ h3,
     --flow-space: #{get-size("600")};
   }
   & + .subtitle {
+    margin-top: calc(-1 * #{get-size("500")});
+    margin-bottom: get-size("600");
+  }
+  & + .byline {
     margin-top: calc(-1 * #{get-size("500")});
     margin-bottom: get-size("600");
   }
