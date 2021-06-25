@@ -7,13 +7,10 @@ function isFeature(index) {
   return index === 0 ? `article-preview--feature` : ``;
 }
 
-function getBio(author, authors) {
-  console.log(author, authors);
-
-  let authorInfo = authors.find(function (item) {
+function getAuthorInfo(author, authors) {
+  return authors.find(function (item) {
     return item.author === author;
   });
-  return authorInfo.bio;
 }
 
 const renderPage = function (articles, authors) {
@@ -21,6 +18,8 @@ const renderPage = function (articles, authors) {
 
   let html = `${articles
     .map(function (article, index) {
+      let authorInfo = getAuthorInfo(article.author, authors);
+
       let html = `
         <article class="[ article-preview ${isFeature(index)} ]">
           <div class="article-preview__title">
@@ -33,7 +32,7 @@ const renderPage = function (articles, authors) {
           <footer class="color-textSecondary gap-top-500">
           <p class="article-preview__title__meta subtitle text-400">By <a rel="author" href="#">${
             article.author
-          }</a>, ${getBio(article.author, authors)}</p>
+          }</a>. ${authorInfo.bio ? authorInfo.bio : ""}</p>
           </footer>
         </article>
      `;
