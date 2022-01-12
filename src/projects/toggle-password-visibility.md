@@ -25,6 +25,6 @@ script: "toggle-password-visibility.js"
     </label>
   </div>
   <p>
-    <button type="submit">Log In</button>
+    <button type="submit" data-type="primary">Log In</button>
   </p>
 </form>

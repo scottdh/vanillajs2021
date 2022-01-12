@@ -23,7 +23,9 @@ const renderPage = function (articles, authors) {
       let html = `
         <article class="[ article-preview ${isFeature(index)} ]">
           <div class="article-preview__title">
-          <h2><a href="${article.url}">${article.title}</a></h2>
+          <h2><a href="${article.url}" class="noUnderline" >${
+        article.title
+      }</a></h2>
           <p class="color-textSecondary subtitle">${article.pubdate}</p>
           </div>
           <div class="article-preview__content">

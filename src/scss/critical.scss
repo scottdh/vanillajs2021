@@ -14,15 +14,25 @@ body {
 }
 
 a:link {
-  color: currentColor;
+  color: get-color("primary");
+  text-decoration: underline;
+  @include apply-utility("font", "sans-serif");
   cursor: pointer;
+
+  &.muted {
+    color: get-color("grey7");
+  }
 }
-a:not([class]) {
-  color: currentColor;
+
+a.noUnderline {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 a:visited {
-  color: get-color("grey7");
+  color: get-color("primaryDarker");
 }
 
 a:focus {
@@ -30,7 +40,8 @@ a:focus {
 }
 
 a:hover {
-  color: var(--primary);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 a:active {

@@ -2,6 +2,6 @@ li.link-list a {
   display: block;
   padding: 0.25em;
   &:hover {
-    background-color: get-color("focus");
+    // border: dashed 1px get-color("primary");
   }
 }

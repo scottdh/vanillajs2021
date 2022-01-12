@@ -1,7 +1,7 @@
 ---
-title: "Monsters!"
+title: "Monsters game setup"
 date: "2021-07-09"
-script: "monsters.js"
+script: "monsters-setup.js"
 ---
 
 <div id="app" class="[ flow ] [ flow-space-1200 ]"></div>

@@ -1,3 +1,5 @@
+// https://nostyle.herokuapp.com/
+
 form {
   &.form--block {
     background-color: get-color("bgZ1");
@@ -36,18 +38,18 @@ form {
   .field {
     max-width: 26em;
     label {
+      display: block;
       line-height: 1.3;
-      display: block;
-      margin-bottom: 0.2em;
-      @include apply-utility("weight", "semiBold");
-    }
-    .field-label {
-      display: block;
-    }
-    .field-hint {
-      color: get-color("textSecondary");
-      @include apply-utility("weight", "regular");
-      display: block;
+      margin-bottom: 0.25rem;
+      .field-label {
+        @include apply-utility("weight", "semiBold");
+        display: block; // Ensures own line when combined with .field-hint
+      }
+      .field-hint {
+        color: get-color("textSecondary");
+        @include apply-utility("weight", "regular");
+        display: block; // Ensures own line
+      }
     }
   }
 }

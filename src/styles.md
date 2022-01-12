@@ -4,6 +4,8 @@ date: "2021-06-02"
 layout: "layouts/project-page.html"
 ---
 
+<h1 class="major">Major heading</h1>
+
 # Heading 1
 
 ## Heading 2
